@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown Clock</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="countdown_styles.css" />
+  <!-- Link to external JavaScript file with defer attribute for asynchronous loading -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Container for the countdown clock -->
+  <div id="clock">
+    <div class="container1">
+      
+      <!-- Days Segment -->
+      <div class="container-segment1">
+        <div class="segment-title1">Days</div>
+        <div class="segment1">
+          <!-- Flip cards for days -->
+          <div class="flip-card1" data-days-hundreds>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+          <div class="flip-card1" data-days-tens>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+          <div class="flip-card1" data-days-ones>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hours Segment -->
+      <div class="container-segment1">
+        <div class="segment-title1">Hours</div>
+        <div class="segment1">
+          <!-- Flip cards for hours -->
+          <div class="flip-card1" data-hours-tens>
+            <div class="top1">2</div>
+            <div class="bottom1">2</div>
+          </div>
+          <div class="flip-card1" data-hours-ones>
+            <div class="top1">4</div>
+            <div class="bottom1">4</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minutes Segment -->
+      <div class="container-segment1">
+        <div class="segment-title1">Minutes</div>
+        <div class="segment1">
+          <!-- Flip cards for minutes -->
+          <div class="flip-card1" data-minutes-tens>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+          <div class="flip-card1" data-minutes-ones>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seconds Segment -->
+      <div class="container-segment1">
+        <div class="segment-title1">Seconds</div>
+        <div class="segment1">
+          <!-- Flip cards for seconds -->
+          <div class="flip-card1" data-seconds-tens>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+          <div class="flip-card1" data-seconds-ones>
+            <div class="top1">0</div>
+            <div class="bottom1">0</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
