@@ -1,0 +1,112 @@
+/* Global styling for all elements */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+}
+
+/* Body styles */
+body {
+  background-color: #500d78;
+  color: #f1f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for flip cards */
+.flip-card1 {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 0.1em;
+}
+
+/* Styles for top and bottom halves of flip cards */
+.top1,
+.bottom1,
+.flip-card1 .top-flip1,
+.flip-card1 .bottom-flip1 {
+  height: 0.75em;
+  line-height: 1;
+  padding: 0.25em;
+  overflow: hidden;
+}
+
+.top1,
+.flip-card1 .top-flip1 {
+  background-color: #7317a8;
+  border-top-right-radius: 0.1em;
+  border-top-left-radius: 0.1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom1,
+.flip-card1 .bottom-flip1 {
+  background-color: #500d78;
+  display: flex;
+  align-items: flex-end;
+  border-bottom-right-radius: 0.1em;
+  border-bottom-left-radius: 0.1em;
+}
+
+/* Animation for flipping top half */
+.flip-card1 .top-flip1 {
+  position: absolute;
+  width: 100%;
+  animation: flip-top 250ms ease-in;
+  transform-origin: bottom;
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+/* Animation for flipping bottom half */
+.flip-card1 .bottom-flip1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: flip-bottom 250ms ease-out 250ms;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+@keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+/* Styles for container holding the countdown segments */
+.container1 {
+  width: 25%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+
+/* Styles for individual countdown segments */
+.container-segment1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  align-items: center;
+}
+
+/* Styles for segment titles */
+.segment1 {
+  display: flex;
+  gap: 0.1em;
+}
+
+.segment-title1 {
+  font-size: 1rem;
+}
