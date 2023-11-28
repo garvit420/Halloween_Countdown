@@ -1,6 +1,10 @@
 # Halloween Countdown Timer
 
 A fun project showcasing a Halloween countdown timer with a captivating witch animation.
+#### Project preview :
+https://garvit420.github.io/Halloween_Countdown
+
+https://47945-3000.2.codesphere.com
 
 ## Table of Contents
 
@@ -76,6 +80,6 @@ This code creates a Halloween-themed animation using HTML and CSS.
 
 ## Blog Link
 
-For more details and insights about this project, visit the [blog post](link) related to this project.
+For more details and insights about this project, visit the [blog post](https://medium.com/@garvitjain101092/way-to-win-a-ps5-and-many-more-prizes-with-codesphere-challenge-96a93033afc8) related to this project.
 
 
